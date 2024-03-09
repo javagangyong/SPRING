@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+	"-//mybatis.org//DTD Config 3.0 //EN" 
+	"https://mybatis.org/dtd/mybatis-3-config.dtd">
+	
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.itbank.model.BoardDTO" alias="board" />
+<!-- 		이 위치를 board라는 이름으로 쓸거다 -->
+	</typeAliases>
+</configuration>
