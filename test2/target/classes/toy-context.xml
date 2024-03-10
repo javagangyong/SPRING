@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+							
+		<bean id="aa" class="p2.BatteryAA">
+			<property name="energy" value="100" />
+		</bean>
+		
+		<bean id="toy" class="p2.Toy">
+			<constructor-arg ref="aa" />
+		</bean>		
+		
+<!-- 		BatteryAA aa = new BatteryAA(); -->
+<!-- 		aa.setEnergy(100); -->
+		
+<!-- 		Toy toy = new Toy(aa); -->
+<!-- 		와 같다 -->
+			
+<!-- 		값을 넣고싶을때는 value를 쓰고 -->
+<!-- 		이미 생성된객체를 참조하고싶을때는 refernce(ref)를 사용한다 -->
+			
+<!-- 		dependency -->
+<!-- 		injection -->
+<!-- 		(DI) -->
+		
+<!-- 		스프링 빈 간의 의존관계는 -->
+<!-- 		생성자 및  setter를 이용하여 주입한다 -->
+		
+</beans>							

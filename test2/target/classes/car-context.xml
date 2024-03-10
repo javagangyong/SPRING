@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+							
+	<!-- 
+		base-package에 지정한 패키지 내부의 모든 클래스를 스캔한다
+		스캔한 클래스 중에서 다음 어노테이션이 명시되어 있는 클래스를 스프링 빈으로 등록한다
+		기본 생성자가 있어야 한다
+		
+		@Controller, @Service, @Repository, @Component ...
+	 -->
+	<context:component-scan base-package="p3" />
+		
+		
+</beans>							
